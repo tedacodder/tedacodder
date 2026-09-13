@@ -90,15 +90,14 @@
 <br/>
 
 <!-- 🚀 FEATURED PROJECTS 🚀 -->
-<!-- EDIT ME: swap the repo names in the workflow's pin-card steps to feature your real projects -->
 <div align="center">
   <h2>🚀 Featured Projects</h2>
   <br/>
-  <a href="https://github.com/tedacodder/your-repo-name-1">
-    <img src="./generated/pin-1.svg" alt="Featured Repo 1" />
+  <a href="https://github.com/tedacodder/hospital-management-system-nextjs">
+    <img src="./generated/pin-1.svg" alt="Hospital Management System (Next.js)" />
   </a>
-  <a href="https://github.com/tedacodder/your-repo-name-2">
-    <img src="./generated/pin-2.svg" alt="Featured Repo 2" />
+  <a href="https://github.com/tedacodder/flashmentor-ai">
+    <img src="./generated/pin-2.svg" alt="FlashMentor AI" />
   </a>
 </div>
 
@@ -122,18 +121,14 @@
 <br/>
 
 <!-- 📫 LET'S CONNECT 📫 -->
-<!-- EDIT ME: fill in your real LinkedIn / X / portfolio links, or delete any you don't use -->
 <div align="center">
   <h2>📫 Let's Connect</h2>
   <br/>
   <a href="mailto:tedacodder@gmail.com">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
-  <a href="https://linkedin.com/in/your-linkedin-handle">
+  <a href="https://www.linkedin.com/in/tewodros-mesfin-4ba5b23a9">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="https://x.com/your-x-handle">
-    <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
   </a>
   <a href="https://your-portfolio-site.com">
     <img src="https://img.shields.io/badge/Portfolio-58A6FF?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
