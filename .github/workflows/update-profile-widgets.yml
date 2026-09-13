@@ -46,13 +46,13 @@ jobs:
           output_path: generated/activity-graph.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      # --- Trophy case (static generator, explicit output path — no filename guessing) ---
+      # --- Trophy case (needs a PAT with read:user + public_repo — GITHUB_TOKEN lacks this scope) ---
       - name: Generate trophy SVG
         uses: Erik-Donath/github-profile-trophy@feature/generate-svg
         with:
           username: tedacodder
           output_path: generated/trophy.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.TROPHY_TOKEN }}
 
       # --- Contribution snake ---
       - name: Generate contribution snake
