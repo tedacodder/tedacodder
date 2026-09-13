@@ -68,6 +68,8 @@
   <h2>📈 Development Matrix</h2>
   <br/>
   <img src="./generated/activity-graph.svg" alt="Activity Graph" width="100%" />
+  <br/><br/>
+  <img src="./generated/streak.svg" alt="GitHub Streak Stats" />
 </div>
 
 <br/>
@@ -87,6 +89,23 @@
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="100%">
 <br/>
 
+<!-- 🚀 FEATURED PROJECTS 🚀 -->
+<!-- EDIT ME: swap the repo names in the workflow's pin-card steps to feature your real projects -->
+<div align="center">
+  <h2>🚀 Featured Projects</h2>
+  <br/>
+  <a href="https://github.com/tedacodder/your-repo-name-1">
+    <img src="./generated/pin-1.svg" alt="Featured Repo 1" />
+  </a>
+  <a href="https://github.com/tedacodder/your-repo-name-2">
+    <img src="./generated/pin-2.svg" alt="Featured Repo 2" />
+  </a>
+</div>
+
+<br/>
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="100%">
+<br/>
+
 <!-- 🐍 COMMIT SNAKE 🐍 -->
 <div align="center">
   <h2>🐍 Contribution Ecosystem</h2>
@@ -96,6 +115,29 @@
     <source media="(prefers-color-scheme: light)" srcset="./generated/snake.svg">
     <img alt="github contribution grid snake animation" src="./generated/snake.svg" width="100%">
   </picture>
+</div>
+
+<br/>
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="100%">
+<br/>
+
+<!-- 📫 LET'S CONNECT 📫 -->
+<!-- EDIT ME: fill in your real LinkedIn / X / portfolio links, or delete any you don't use -->
+<div align="center">
+  <h2>📫 Let's Connect</h2>
+  <br/>
+  <a href="mailto:tedacodder@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <a href="https://linkedin.com/in/your-linkedin-handle">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://x.com/your-x-handle">
+    <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
+  </a>
+  <a href="https://your-portfolio-site.com">
+    <img src="https://img.shields.io/badge/Portfolio-58A6FF?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
+  </a>
 </div>
 
 <br/>
