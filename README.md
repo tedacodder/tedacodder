@@ -1,15 +1,13 @@
 <!-- 🌟 HERO SECTION 🌟 -->
 <div align="center">
-  <img src="https://i.imgur.com/ZMBt0N7.gif" alt="Cinematic Header" width="100%" style="border-radius: 15px;"/>
-  
-  <br/><br/>
-  
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=58A6FF,0D1117&height=180&section=header&text=tedacodder&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=40" width="100%" alt="Header Banner"/>
+
   <h1><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Waving%20Hand.png" alt="Waving Hand" width="45" /> Welcome to tedacodder's Digital Workspace</h1>
-  
+
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=58A6FF&center=true&vCenter=true&width=800&lines=4th-Year+Computer+Science+%26+Engineering+Student;Full-Stack+Architect+%7C+Problem+Solver;Crafting+Cinematic+UIs+%26+Robust+Backends;React+%7C+PostgreSQL+%7C+Node.js" alt="Typing SVG" />
-  
-  <br/><br/>
-  
+
+  <br/>
+
   <!-- Social Badges -->
   <a href="mailto:tedacodder@gmail.com">
     <img src="https://img.shields.io/badge/Email-Connect_Now-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
@@ -23,24 +21,30 @@
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="100%">
 <br/>
 
-<!-- 💻 COMMAND CENTER: ABOUT & TROPHIES 💻 -->
-<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; border: none;">
-  <tr style="border: none;">
-    <td width="55%" valign="top" style="border: none;">
-      <h2>💫 Core Directive</h2>
-      <p>I am a <b>4th-Year CS & Engineering Student</b> dedicated to building seamless, high-performance web applications. I thrive at the intersection of complex algorithmic logic and stunning digital design.</p>
-      <ul>
-        <li>🚀 <b>Currently Engineering:</b> Full-stack architectures using <b>React, Next.js, and Express</b>.</li>
-        <li>🧠 <b>Problem Solving:</b> Continuously optimizing logic via <b>Data Structures and Algorithms</b>.</li>
-        <li>🌱 <b>Current Objectives:</b> Mastering backend security, deploying scalable databases (<b>PostgreSQL</b>), and contributing to high-impact open-source tools.</li>
-      </ul>
-    </td>
-    <td width="45%" align="center" valign="top" style="border: none;">
-      <h2>🏆 Achievements</h2>
-      <img src="./generated/trophy.svg" alt="Trophies" />
-    </td>
-  </tr>
-</table>
+<!-- 💫 CORE DIRECTIVE 💫 -->
+<div align="center">
+  <h2>💫 Core Directive</h2>
+</div>
+
+<div align="center" style="max-width: 780px; margin: 0 auto; text-align: left;">
+  <p>I am a <b>4th-Year CS & Engineering Student</b> dedicated to building seamless, high-performance web applications. I thrive at the intersection of complex algorithmic logic and stunning digital design.</p>
+  <ul>
+    <li>🚀 <b>Currently Engineering:</b> Full-stack architectures using <b>React, Next.js, and Express</b>.</li>
+    <li>🧠 <b>Problem Solving:</b> Continuously optimizing logic via <b>Data Structures and Algorithms</b>.</li>
+    <li>🌱 <b>Current Objectives:</b> Mastering backend security, deploying scalable databases (<b>PostgreSQL</b>), and contributing to high-impact open-source tools.</li>
+  </ul>
+</div>
+
+<br/>
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="100%">
+<br/>
+
+<!-- 🏆 ACHIEVEMENTS 🏆 -->
+<div align="center">
+  <h2>🏆 Achievements</h2>
+  <br/>
+  <img src="./generated/trophy.svg" alt="Trophies" />
+</div>
 
 <br/>
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="100%">
@@ -55,11 +59,14 @@
   </a>
 </div>
 
-<br/><br/>
+<br/>
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="100%">
+<br/>
 
 <!-- 📊 THE DATA MATRIX (STATS & ACTIVITY) 📊 -->
 <div align="center">
   <h2>📈 Development Matrix</h2>
+  <br/>
   <img src="./generated/activity-graph.svg" alt="Activity Graph" width="100%" />
 </div>
 
@@ -77,6 +84,8 @@
 </table>
 
 <br/>
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="100%">
+<br/>
 
 <!-- 🐍 COMMIT SNAKE 🐍 -->
 <div align="center">
@@ -85,7 +94,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./generated/snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="./generated/snake.svg">
-    <img alt="github contribution grid snake animation" src="./generated/snake.svg">
+    <img alt="github contribution grid snake animation" src="./generated/snake.svg" width="100%">
   </picture>
 </div>
 
