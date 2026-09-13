@@ -46,27 +46,13 @@ jobs:
           output_path: generated/activity-graph.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      # --- Trophy case (official static generator from ryo-ma/github-profile-trophy) ---
-      - name: Setup Deno
-        uses: denoland/setup-deno@v1
-        with:
-          deno-version: v1.x
-
-      - name: Checkout trophy generator source
-        uses: actions/checkout@v4
-        with:
-          repository: ryo-ma/github-profile-trophy
-          path: trophy-src
-
+      # --- Trophy case (static generator, explicit output path — no filename guessing) ---
       - name: Generate trophy SVG
-        working-directory: trophy-src
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          deno run --allow-net --allow-env --allow-read --allow-write ./render_svg.ts tedacodder ../generated dracula
-          # Check the generated/ folder after the first run —
-          # if the output file isn't named trophy.svg, rename this step's
-          # output or update the <img> src in README.md to match.
+        uses: Erik-Donath/github-profile-trophy@feature/generate-svg
+        with:
+          username: tedacodder
+          output_path: generated/trophy.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       # --- Contribution snake ---
       - name: Generate contribution snake
