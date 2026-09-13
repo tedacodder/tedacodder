@@ -1,0 +1,87 @@
+name: Update Profile Widgets
+
+on:
+  schedule:
+    - cron: "0 3 * * *"   # once a day at 03:00 UTC
+  workflow_dispatch:        # lets you trigger it manually from the Actions tab
+  push:
+    branches: [main]
+
+jobs:
+  update-widgets:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout profile repo
+        uses: actions/checkout@v4
+
+      - name: Ensure output folder exists
+        run: mkdir -p generated
+
+      # --- GitHub stats card ---
+      - name: Generate stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=tedacodder&show_icons=true&theme=dracula&hide_border=true
+          path: generated/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # --- Top languages card ---
+      - name: Generate top languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=tedacodder&layout=compact&theme=dracula&hide_border=true
+          path: generated/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # --- Activity / commit graph ---
+      - name: Generate activity graph
+        uses: maurodesouza/github-readme-activity-graph-action@v1
+        with:
+          username: tedacodder
+          options: theme=dracula&hide_border=true&area=true&custom_title=Commit Trajectory
+          output_path: generated/activity-graph.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # --- Trophy case (official static generator from ryo-ma/github-profile-trophy) ---
+      - name: Setup Deno
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+
+      - name: Checkout trophy generator source
+        uses: actions/checkout@v4
+        with:
+          repository: ryo-ma/github-profile-trophy
+          path: trophy-src
+
+      - name: Generate trophy SVG
+        working-directory: trophy-src
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          deno run --allow-net --allow-env --allow-read --allow-write ./render_svg.ts tedacodder ../generated dracula
+          # Check the generated/ folder after the first run —
+          # if the output file isn't named trophy.svg, rename this step's
+          # output or update the <img> src in README.md to match.
+
+      # --- Contribution snake ---
+      - name: Generate contribution snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: tedacodder
+          outputs: |
+            generated/snake.svg
+            generated/snake-dark.svg?palette=github-dark
+
+      # --- Commit everything back to the repo ---
+      - name: Commit and push generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add generated/*.svg
+          git commit -m "chore: refresh profile README widgets" || echo "No changes to commit"
+          git push
