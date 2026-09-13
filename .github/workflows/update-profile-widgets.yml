@@ -7,6 +7,10 @@ on:
   push:
     branches: [main]
 
+concurrency:
+  group: profile-widgets
+  cancel-in-progress: false
+
 jobs:
   update-widgets:
     runs-on: ubuntu-latest
@@ -108,4 +112,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add generated/*.svg
           git commit -m "chore: refresh profile README widgets" || echo "No changes to commit"
+          git pull --rebase origin main
           git push
