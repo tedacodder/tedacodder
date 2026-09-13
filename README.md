@@ -37,9 +37,7 @@
     </td>
     <td width="45%" align="center" valign="top" style="border: none;">
       <h2>🏆 Achievements</h2>
-      <a href="https://github.com/ryo-ma/github-profile-trophy">
-        <img src="https://github-profile-trophy.vercel.app/?username=tedacodder&theme=dracula&no-frame=true&no-bg=true&margin-w=15&column=3" alt="Trophies" />
-      </a>
+      <img src="./generated/trophy.svg" alt="Trophies" />
     </td>
   </tr>
 </table>
@@ -62,7 +60,7 @@
 <!-- 📊 THE DATA MATRIX (STATS & ACTIVITY) 📊 -->
 <div align="center">
   <h2>📈 Development Matrix</h2>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=tedacodder&theme=dracula&hide_border=true&area=true&custom_title=Commit%20Trajectory" alt="Activity Graph" width="100%" />
+  <img src="./generated/activity-graph.svg" alt="Activity Graph" width="100%" />
 </div>
 
 <br/>
@@ -70,10 +68,10 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; border: none;">
   <tr style="border: none;">
     <td width="50%" align="center" style="border: none;">
-      <img src="https://github-readme-stats.vercel.app/api?username=tedacodder&theme=dracula&hide_border=true&show_icons=true" alt="GitHub Stats" width="100%" />
+      <img src="./generated/stats.svg" alt="GitHub Stats" width="100%" />
     </td>
     <td width="50%" align="center" style="border: none;">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tedacodder&theme=dracula&hide_border=true&layout=compact" alt="Top Languages" width="100%" />
+      <img src="./generated/top-langs.svg" alt="Top Languages" width="100%" />
     </td>
   </tr>
 </table>
@@ -85,10 +83,9 @@
   <h2>🐍 Contribution Ecosystem</h2>
   <p><i>The snake consumes my daily contributions...</i></p>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tedacodder/tedacodder/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tedacodder/tedacodder/output/github-contribution-grid-snake.svg">
-    <!-- Note: This image will appear broken until you setup the GitHub Action in your repository! -->
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/tedacodder/tedacodder/output/github-contribution-grid-snake.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="./generated/snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./generated/snake.svg">
+    <img alt="github contribution grid snake animation" src="./generated/snake.svg">
   </picture>
 </div>
 
@@ -100,7 +97,7 @@
 <div align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dracula" alt="Quote" />
   <br/><br/>
-  <img src="https://visitcount.itsvg.in/api?id=tedacodder&icon=3&color=6" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=tedacodder&color=58A6FF&style=for-the-badge" alt="Profile Views" />
 </div>
 
 <!-- 🌊 ANIMATED WATER WAVE 🌊 -->
