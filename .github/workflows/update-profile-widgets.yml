@@ -54,6 +54,19 @@ jobs:
           output_path: generated/trophy.svg
           token: ${{ secrets.TROPHY_TOKEN }}
 
+      # The action above ignores output_path and always writes to ./trophy.svg
+      # at the repo root — move it into generated/ so it actually gets committed.
+      - name: Move trophy SVG into generated folder
+        run: |
+          if [ -f trophy.svg ]; then
+            mv trophy.svg generated/trophy.svg
+            echo "Moved trophy.svg into generated/"
+          elif [ -f generated/trophy.svg ]; then
+            echo "trophy.svg already in generated/, nothing to move"
+          else
+            echo "::warning::trophy.svg not found at repo root or in generated/ — check the previous step's output"
+          fi
+
       # --- Contribution snake ---
       - name: Generate contribution snake
         uses: Platane/snk@v3
