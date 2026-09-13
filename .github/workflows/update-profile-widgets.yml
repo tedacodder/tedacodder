@@ -55,13 +55,11 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       # --- Featured project pin cards ---
-      # EDIT ME: replace "your-repo-name-1" / "your-repo-name-2" with real repo names
-      # you own (or contributed to). These render as pinned-repo style cards.
       - name: Generate featured project card 1
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=tedacodder&repo=your-repo-name-1&theme=dracula&hide_border=true
+          options: username=tedacodder&repo=hospital-management-system-nextjs&theme=dracula&hide_border=true
           path: generated/pin-1.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -69,7 +67,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: username=tedacodder&repo=your-repo-name-2&theme=dracula&hide_border=true
+          options: username=tedacodder&repo=flashmentor-ai&theme=dracula&hide_border=true
           path: generated/pin-2.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
