@@ -130,7 +130,7 @@
   <a href="https://www.linkedin.com/in/tewodros-mesfin-4ba5b23a9">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="https://your-portfolio-site.com">
+  <a href="https://tedacodder-h0vs8ma02-tewodros-mesfins-projects.vercel.app/">
     <img src="https://img.shields.io/badge/Portfolio-58A6FF?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
   </a>
 </div>
