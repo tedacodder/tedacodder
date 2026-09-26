@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">tedacodder&#39;s GitHub Stats, Rank: C+</title>
-        <desc id="descId">Total Stars Earned: 1, Total Commits  (last year) : 1253, Total PRs: 8, Total Issues: 1, Contributed to (last year): 1</desc>
+        <desc id="descId">Total Stars Earned: 1, Total Commits  (last year) : 1254, Total PRs: 8, Total Issues: 1, Contributed to (last year): 1</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 194.07253718300615;
+        stroke-dashoffset: 194.06894292041727;
       }
     }
   
